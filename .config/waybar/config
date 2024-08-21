@@ -6,9 +6,9 @@
     "margin": "5px 0 0 0",
 
     // Choose the order of the modules
-    "modules-left": ["custom/media", "hyprland/workspaces"],
+    "modules-left": ["hyprland/workspaces"],
     "modules-center": ["clock"],
-    "modules-right": ["pulseaudio", "cpu", "memory", "battery", "tray"],
+    "modules-right": ["pulseaudio", "cpu", "memory", "battery"],
 
 
     // Modules configuration
@@ -85,8 +85,8 @@
     "battery": {
         "states": {
             // "good": 95,
-            "warning": 30,
-            "critical": 15
+            "warning": 20,
+            // "critical": 15
         },
         "format": "{capacity}% {icon}",
         "format-charging": "{capacity}% ",

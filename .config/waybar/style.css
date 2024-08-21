@@ -109,7 +109,7 @@ button:hover {
 }
 
 /* If workspaces is the rightmost module, omit right margin */
-.modules-right > widget:last-child {
+.modules-right > widget:last-child > #battery {
     margin-right: 10px;
 }
 
@@ -119,7 +119,7 @@ button:hover {
 }
 
 #battery {
-
+   color: #a6e3a1;
 }
 
 #battery.charging, #battery.plugged {
@@ -134,14 +134,9 @@ button:hover {
     }
 }
 
-#battery.critical:not(.charging) {
+#battery.warning:not(.charging) {
     background-color: #f38ba8;
     color: #ffffff;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
 }
 
 label:focus {
@@ -153,7 +148,7 @@ label:focus {
 }
 
 #memory {
-    background-color: #9b59b6;
+    /* background-color: #9b59b6; */
 }
 
 #disk {
@@ -171,12 +166,12 @@ label:focus {
 #network.disconnected {
     background-color: #f53c3c;
 }
-
+/*
 #pulseaudio {
     background-color: #f1c40f;
     color: #000000;
 }
-
+*/
 #pulseaudio.muted {
     background-color: #90b1b1;
     color: #2a5c45;
